@@ -5,8 +5,14 @@ source 'https://rubygems.org'
 ruby '2.3.3', :engine => 'jruby', :engine_version => '9.1.12.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.9'
+
+
 # Use jdbcsqlite3 as the database for Active Record
-gem 'activerecord-jdbcsqlite3-adapter'
+# Database
+gem 'pg', platforms: :ruby
+gem 'activerecord-jdbcpostgresql-adapter', platforms: :jruby
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
