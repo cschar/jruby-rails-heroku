@@ -12,6 +12,16 @@ gem 'rails', '4.2.9'
 gem 'pg', platforms: :ruby
 gem 'activerecord-jdbcpostgresql-adapter', platforms: :jruby
 
+# Assets
+gem 'therubyracer', platforms: :ruby
+gem 'therubyrhino', platforms: :jruby
+
+group :test, :development do
+  gem "sqlite3", platforms: :ruby
+  gem "activerecord-jdbcsqlite3-adapter", platforms: :jruby
+
+
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
